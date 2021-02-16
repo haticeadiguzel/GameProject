@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GameProject
+namespace GameProject.Entity
 {
-    class Campaigne
+    public class Campaigne
     {
         public string CampaigneName { get; set; }
         public float FirstPrice { get; set; }

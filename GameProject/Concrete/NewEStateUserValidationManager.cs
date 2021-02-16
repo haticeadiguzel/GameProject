@@ -1,11 +1,13 @@
-﻿using System;
+﻿using GameProject.Abstract;
+using GameProject.Entity;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 //6. Eğer e dvlet değişirse yeni sistemi bu şekilde oluştururuz
-namespace GameProject
+namespace GameProject.Concrete
 {
-    class NewEStateUserValidationManager : IUserValidationService //İnheritence eklenir
+    public class NewEStateUserValidationManager : IUserValidationService //İnheritence eklenir
     {
         public bool Validate(Gamer gamer)
         {

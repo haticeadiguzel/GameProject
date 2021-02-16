@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GameProject
+namespace GameProject.Abstract
 {
-    interface ICampaigneService
+    public interface ICampaigneService
     {
         void NewCampaigneEnter();
         void CampaigneDelete();

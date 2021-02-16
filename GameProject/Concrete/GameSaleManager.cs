@@ -1,10 +1,12 @@
-﻿using System;
+﻿using GameProject.Abstract;
+using GameProject.Entity;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace GameProject
+namespace GameProject.Concrete
 {
-    class GameSaleManager : IGameSaleService
+    public class GameSaleManager : IGameSaleService
     {
         public void Sale(Gamer gamer)
         {

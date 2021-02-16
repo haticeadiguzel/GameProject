@@ -1,4 +1,6 @@
-﻿using System;
+﻿using GameProject.Concrete;
+using GameProject.Entity;
+using System;
 
 namespace GameProject
 {

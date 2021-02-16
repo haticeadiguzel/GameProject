@@ -1,12 +1,14 @@
-﻿using System;
+﻿using GameProject.Abstract;
+using GameProject.Entity;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 //5. interface açıldıktan ve ilgili kod yazıldıktan sonra
 //birde manager class'ı açarız.
-namespace GameProject
+namespace GameProject.Concrete
 {
-    class UserValidationManager : IUserValidationService //İnheritance yapılır
+    public class UserValidationManager : IUserValidationService //İnheritance yapılır
     {
         public bool Validate(Gamer gamer) //doğrulama kodları yazılır. Void Bool olarak değiştirildi
         {

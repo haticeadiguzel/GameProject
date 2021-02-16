@@ -5,9 +5,9 @@ using System.Text;
 //1. olarak bu özellik class'ı açıldı ve bu class'ta
 //olması gereken özellikler yazıldı
 
-namespace GameProject
+namespace GameProject.Entity
 {
-    class Gamer
+    public class Gamer
     {
         public string NationalityNumber { get; set; }
         public string FirstName { get; set; }

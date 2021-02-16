@@ -1,10 +1,11 @@
-﻿using System;
+﻿using GameProject.Abstract;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace GameProject
+namespace GameProject.Concrete
 {
-    class CampaigneManager : ICampaigneService
+    public class CampaigneManager : ICampaigneService
     {
         public void CampaigneDelete()
         {

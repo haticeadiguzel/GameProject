@@ -1,15 +1,17 @@
-﻿using System;
+﻿using GameProject.Abstract;
+using GameProject.Entity;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 //3. olarak bu Fonksiyon class'ı açıldı ve interface
 //ile inheritance yapıldı.
 
-namespace GameProject
+namespace GameProject.Concrete
 {
     //Microservice GamerManager içinde bir başka servis kullanılcak demek
-    
-    class GamerManager : IGamerService
+
+    public class GamerManager : IGamerService
     {
         IUserValidationService _userValidationService; //Bir manager sınıfının içinde başka bir manager kısmı kullanılacak ise asla onu new'leme onun yerine böyle yap.
         public GamerManager(IUserValidationService userValidationService) //Ampülden generete constructer seçersek çıkar
@@ -19,7 +21,7 @@ namespace GameProject
 
         public void Registration(Gamer gamer)
         {
-            if (_userValidationService.Validate(gamer)==true)
+            if (_userValidationService.Validate(gamer) == true)
             {
                 Console.WriteLine("Kayıt olundu.");
             }
